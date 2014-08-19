@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Codazen</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0-rc.1/jquery.mobile-1.3.0-rc.1.min.css" />
+    <script src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.3.0-rc.1/jquery.mobile-1.3.0-rc.1.min.js"></script>
+    <script src="js/underscore.js"></script>
+    <script src="js/backbone.js"></script>
+    <script src="js/addressBook.js"></script>
+</head>
+
+<body>
+
+<div data-role="page" id="pg-index">
+
+    <div data-role="header">
+    </div><!-- /header -->
+
+    <div data-role="index-content">
+        <h1>Directory</h1>
+        <hr>
+        <ul data-role="listview" data-split-icon="delete" id="indexList">
+            <li><a data-icon="delete">Green, Terrell </a><a class="delete"></a></li>
+        </ul>
+        <a href="#pg-create" data-role="button" data-theme="b">Add Contact</a>
+    </div><!-- /content -->
+
+    <div data-role="footer">
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="pg-create">
+    <div data-role="header">
+    </div><!-- /header -->
+    <div data-role="content" id="pg-create-content">
+        <h1>New Contact</h1>
+        <hr>
+        <input id="create-first" type="text"  placeholder="First"  />
+        <input id="create-last" type="text"  placeholder="Last"  />
+        <input id="create-email" type="text"  placeholder="Email"  />
+        <button type="submit" id="btn-create" data-theme="b">Submit</button>
+        <a data-role="button" href="#pg-index">View Directory</a>
+    </div><!-- /content -->
+    <div data-role="footer">
+    </div><!-- /footer -->
+</div>
+
+<div data-role="page" id="pg-edit">
+    <div data-role="header"></div>
+    <div data-role="content" id="pg-edit-content">
+        <div id="edit-area"></div>
+        <h1 id="pg-edit-heading"></h1>
+        <hr>
+        <input type="text" id="edit-first"/>
+        <input type="text" id="edit-last"/>
+        <input type="text" id="edit-email" />
+        <button id="btn-update" type="submit" data-theme="b">Update</button>
+        <a data-role="button" href="#pg-index" class="return">View Directory</a>
+    </div><!-- /content -->
+    <div data-role="footer">
+    </div><!-- /footer -->
+</div>
+
+</body>
+</html>
