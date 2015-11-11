@@ -17,7 +17,7 @@ var Directory = Backbone.Collection.extend ({
     url: "api/contacts",
     comparator: 'last_name',
     seed: function() {
-        this.create({first_name: "Terrell", last_name: "Green", email: "tgreen@codazen.com"});
+        this.create({first_name: "Terrell", last_name: "Green", email: "tgreen@bossdev.com"});
         this.create({first_name: "Jimmy", last_name: "Hendrix", email: "jhendrix@rockgod.com"});
         this.create({first_name: "Sara", last_name: "Conner", email: "sconner@judgementday.com"});
         this.create({first_name: "Chuck", last_name:"Bartowski", email:"intersect@cia.gov"});
